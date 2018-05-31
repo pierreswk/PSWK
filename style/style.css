@@ -1,0 +1,734 @@
+@font-face {
+    font-family: "Larsseit-Bold";
+    src: url("../fonts/Larsseit-Bold.woff") format("woff"), url("../fonts/Larsseit-Bold.otf") format("otf");
+}
+
+@font-face {
+    font-family: "Larsseit";
+    src: url("../fonts/Larsseit.woff") format("woff"), url("../fonts/Larsseit.otf") format("otf");
+}
+
+body {
+    font-family: 'Larsseit';
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+    color: #252a34;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-color: #eaeaea;
+    position: relative;
+}
+
+nav {
+    z-index: 10;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+}
+
+main {
+    width: 100vw;
+    background-color: #fff;
+    margin: 40px 0px 40px 0px;
+}
+
+h1 {
+    font-size: 6vmin;
+    color: #ff165d;
+    font-family: 'Larsseit-Bold';
+}
+
+h2 {
+    font-size: 24px;
+    color: #ff165d;
+    font-family: 'Larsseit';
+}
+
+h3 {
+    font-size: 6vmin;
+    font-family: 'Larsseit-Bold';
+}
+
+a {
+    text-decoration: none;
+    color: #252a34;
+    font-family: 'Larsseit-Bold';
+}
+
+#cv{
+    color: #ff165d;
+    font-size: 16px;
+}
+
+.logo{
+    position: absolute;
+    z-index: 1;
+    right: 40px;
+    top: 25px;
+}
+
+/* BURGER */
+
+#BurgerDesktop {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: space-between;
+    width: 24px;
+    height: 24px;
+    margin-top: 40px;
+    margin-left: 40px;
+    position: relative;
+    z-index: 9999;
+    cursor: pointer;
+}
+
+#BurgerDesktop:hover~.trait {
+    background-color: #ff165d;
+    cursor: pointer;
+}
+
+.trait {
+    width: 24px;
+    height: 4px;
+    background-color: #252a34;
+}
+
+#Trait1,
+#Trait2,
+#Trait3 {
+    transition: all .2s ease;
+    transform-origin: 10% 50%;
+}
+
+/* MENU BURGER */
+
+.menuBurger {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    margin-left: -100vw;
+    transition: all 0.5s ease-out;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.menuProjets {
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.menuProjets ul li {
+    list-style: none;
+    font-family: 'Larsseit-Bold';
+    font-size: 60px;
+    line-height: 100px;
+    color: #252a34;
+}
+
+li a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.traitLink0,
+.traitLink1,
+.traitLink2,
+.traitLink3,
+.traitLink4,
+.traitLink44 {
+    width: 0px;
+    margin-top: -50px;
+    height: 25px;
+    background-color: #ff165d;
+    transition: 400ms ease-in;
+    margin-left: -10px;
+}
+
+.traitLink5 {
+    width: 0px;
+    margin-top: -15px;
+    height: 15px;
+    background-color: #ff165d;
+    transition: 400ms ease-in;
+    margin-left: -10px;
+}
+
+#link0:hover~.traitLink0 {
+    width: 232px;
+}
+
+#link1:hover~.traitLink1 {
+    width: 248px;
+}
+
+#link2:hover~.traitLink2 {
+    width: 172px;
+}
+
+#link3:hover~.traitLink3 {
+    width: 223px;
+}
+
+#link4:hover~.traitLink4 {
+    width: 275px;
+}
+
+#link44:hover~.traitLink44 {
+    width: 275px;
+}
+
+#link5:hover~.traitLink5 {
+    width: 275px;
+}
+
+.menuContact {
+    background-color: #F9F9F9;
+    width: 480px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#social {
+    width: 80%;
+}
+
+#menuSocial {
+    height: 40px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+#contact {
+    width: 80%;
+}
+
+#contact a {
+    font-size: 20px;
+    text-decoration: #252a34;
+}
+
+@media screen and (max-width: 800px) {
+    .menuBurger {
+        flex-direction: column;
+        width: 100vw;
+    }
+    .menuProjets {
+        height: 65vh;
+        width: 100vw;
+    }
+    .menuContact {
+        height: 35vh;
+        width: 100vw;
+    }
+}
+
+/* HERO */
+
+.hero {
+    position: relative;
+    margin: auto;
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.heroBlock1 {
+    width: 55%;
+}
+
+.heroBlock1 h2{
+    margin: -25px 0px;
+font-size: 5vmin;
+}
+
+.heroBlock1 h3 {
+    font-size: 10vmin;
+    margin: 0px;
+}
+
+.heroBlock2 {
+    width: 45%;
+}
+
+.heroBlock2 p {
+    width: 80%;
+}
+
+@media screen and (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .heroBlock1,
+    .heroBlock2 {
+        width: 100%;
+    }
+}
+
+.socialContainer {
+    width: 25px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.dribbble {
+    height: 25px;
+    width: 25px;
+    background-color: #252a34;
+    -webkit-mask: url(../icons/dribbble.svg) no-repeat center;
+    mask: url(../icons/dribbble.svg) no-repeat center;
+    z-index: 2;
+}
+
+.traitDribbble {
+    width: 0px;
+    height: 10px;
+    background-color: #ff165d;
+    transition: 400ms ease-in;
+    margin-top: 12px;
+    margin-left: -75px;
+    position: absolute;
+}
+
+.dribbble:hover~.traitDribbble {
+    width: 30px;
+}
+
+.behance {
+    height: 25px;
+    width: 25px;
+    background-color: #252a34;
+    -webkit-mask: url(../icons/behance.svg) no-repeat center;
+    mask: url(../icons/behance.svg) no-repeat center;
+    z-index: 2;
+}
+
+.traitBehance {
+    width: 0px;
+    height: 10px;
+    background-color: #ff165d;
+    transition: 400ms ease-in;
+    margin-top: 12px;
+    margin-left: -75px;
+    position: absolute;
+}
+
+.behance:hover~.traitBehance {
+    width: 30px;
+}
+
+.mail {
+    height: 25px;
+    width: 25px;
+    z-index: 2;
+    background-color: #252a34;
+    -webkit-mask: url(../icons/mail.svg) no-repeat center;
+    mask: url(../icons/mail.svg) no-repeat center;
+}
+
+.traitMail {
+    width: 0px;
+    height: 10px;
+    background-color: #ff165d;
+    transition: 400ms ease-in;
+    margin-top: 12px;
+    margin-left: -25px;
+    position: absolute;
+}
+
+.mail:hover~.traitMail {
+    width: 30px;
+}
+
+.linkedin {
+    height: 25px;
+    width: 25px;
+    background-color: #252a34;
+    -webkit-mask: url(../icons/linkedin.svg) no-repeat center;
+    mask: url(../icons/linkedin.svg) no-repeat center;
+    transition: 100ms all ease-in;
+    z-index: 2;
+}
+
+.traitLinkedin {
+    width: 0px;
+    height: 10px;
+    background-color: #ff165d;
+    transition: 400ms ease-in;
+    margin-top: 12px;
+    margin-left: -75px;
+    position: absolute;
+}
+
+.linkedin:hover~.traitLinkedin {
+    width: 30px;
+}
+
+/* .dribbble:hover,
+.behance:hover,
+.linkedin:hover,
+.mail:hover{
+    background-color: #ff165d;
+} */
+
+.socialButton {
+    height: 40px;
+    width: 40px;
+    background-color: #252a34;
+    display: flex;
+    /* overflow:hidden; */
+}
+
+.socialButton:hover {
+    background-color: #ff165d;
+}
+
+.socialButton img {
+    margin: auto;
+    width: 24px;
+}
+
+.scrollBox {
+    height: 10vh;
+    width: 30px;
+    margin-left: 50%;
+    bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    position: absolute;
+}
+
+#scrollStick {
+    height: 45px;
+    width: 2px;
+    background-color: #252a34;
+    margin: auto;
+}
+
+#scrollWord {
+    transform-origin: top left;
+    transform: rotateZ(-90deg);
+    margin-left: 5px;
+    margin-bottom: -55px;
+    z-index: 0;
+}
+
+/* ABOUT */
+
+.about {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutBlock {
+    width: 45%;
+    height: 50%;
+}
+
+.aboutBlock h1 {
+    text-align: left;
+}
+
+.aboutBlock p {
+    width: 80%;
+}
+
+.motCle {
+    cursor: url("icons/cursorRock.png"), pointer;
+    color: #ff3366;
+    font-weight: 600;
+}
+
+.aboutPhoto {
+    height: 80%;
+    width: 35%;
+    overflow: hidden;
+    border: solid 15px white;
+    box-shadow:
+    inset 0 7em 10em -5em rgba(255,255,255,0.7),
+    0 0.3em 0.5em -0.2em rgba(100,100,100,0.2),
+    0 1em 2em -0.75em rgba(100,100,100,0.2),
+    0 1em 3em -0.5em rgba(100,100,100,0.2),
+    0 3em 3em -0.25em rgba(100,100,100,0.2);
+}
+
+.aboutPhoto img {
+    object-fit: cover;
+    object-position: 50% 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.imageCle {
+    display: none;
+}
+
+
+
+/* WORK */
+
+main h1 {
+    text-align: center;
+}
+
+.worksButton {
+    margin: auto;
+    background-color: #252a34;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 30px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    margin-top: 40px;
+    text-transform: uppercase;
+    transition: 300ms ease-in-out all;
+}
+
+.worksButton:hover {
+    margin-top: 37px;
+    cursor: pointer;
+}
+
+.works {
+    width: 100vw;
+    max-width: 1280px;
+    margin: auto;
+    height: 80vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.row1 {
+    width: 37%;
+    height: 100%;
+    background-color: blue;
+}
+
+.row2 {
+    width: 32%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.row3 {
+    width: 26%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#projet1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.masque {
+    background-color: #252a34;
+    opacity: 0.8;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+}
+
+#projet1 img:hover~.masque {
+    display: block;
+    margin-top: -173%;
+    cursor: pointer;
+}
+
+#projet2 {
+    width: 100%;
+    height: 55%;
+    background-color: red;
+}
+
+#projet3 {
+    width: 100%;
+    height: 40%;
+    background-color: red;
+}
+
+#projet4 {
+    width: 100%;
+    height: 35%;
+    background-color: yellow;
+}
+
+#projet5 {
+    width: 100%;
+    height: 60%;
+    background-color: yellow;
+}
+
+#projet1 img,
+#projet2 img,
+#projet3 img,
+#projet4 img,
+#projet5 img {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+@media screen and (max-width: 1024px) {
+    .works {
+        flex-direction: column;
+        height: 350vh;
+        width: 100vw;
+    }
+    .row1 {
+        height: 70vh;
+        width: 90vw;
+        margin: auto;
+    }
+    .row2 {
+        height: 140vh;
+        width: 90vw;
+        margin: auto;
+    }
+    .row3 {
+        height: 140vh;
+        width: 90vw;
+        margin: auto;
+    }
+    #projet1,
+    #projet2,
+    #projet3,
+    #projet4,
+    #projet5 {
+        height: 70vh;
+    }
+}
+
+/* FOOTER */
+
+footer {
+    width: 100vw;
+    height: 30vh;
+    background-color: #ff165d;
+    color: #f9f9f9;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    font-size: 5vmin;
+}
+
+footer a {
+    color: inherit;
+}
+
+.hello a:hover {
+    color: white;
+}
+
+.hello a:hover~.traitLink6 {
+    width: 550px;
+}
+
+.hello {
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    align-items: center;
+    /* background-color: hotpink; */
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+}
+
+.hello a {
+    z-index: 1;
+}
+
+.traitLink6 {
+    width: 0px;
+    height: 25px;
+    background-color: #00FFF0;
+    transition: 400ms ease-in;
+    margin-top: -30px;
+}
+
+/* SINGLE PROJECT */
+
+.projectCover {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    background-color: #ff165d;
+}
+
+.projectCover img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    opacity: 0.3;
+}
+
+.projectCover h1 {
+    position: absolute;
+    font-size: 10vmin;
+    /* margin: auto; */
+    color: white;
+    align-self: center;
+    width: 70vw;
+    height: 10vh;
+    margin: 45vh 15vw 45vh 15vw;
+    display: block;
+    align-items: center;
+    text-align: center;
+    z-index: 1;
+}
+
+.projetPart1 {
+    height: 100vh;
+    width: 100vw;
+}
+
+.projetPart2 {
+    height: 100vh;
+    width: 100vw;
+    background-color: whitesmoke;
+}
+
+.projetPart1,
+.projetPart2 h1 {
+    text-align: center;
+    margin: 0px;
+}
