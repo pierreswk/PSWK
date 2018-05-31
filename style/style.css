@@ -33,7 +33,7 @@ nav {
 main {
     width: 100vw;
     background-color: #fff;
-    margin: 40px 0px 40px 0px;
+    margin: 0px 0px 40px 0px;
 }
 
 h1 {
@@ -59,16 +59,44 @@ a {
     font-family: 'Larsseit-Bold';
 }
 
-#cv{
+#cv {
     color: #ff165d;
     font-size: 16px;
 }
 
-.logo{
+#cvButton{
+    display: none;
+    margin: auto;
+    width: 100%;
+}
+
+#cvButton button{
+    background-color: #ff165d;
+    color: white;
+    padding: 20px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    width: 100%;
+}
+
+button a{
+    color: white;
+}
+
+button:active{
+    transform: scale(0.9);
+}
+
+.logo {
     position: absolute;
     z-index: 1;
     right: 40px;
-    top: 25px;
+    top: 33px;
+}
+
+img.logo {
+    height: 35px;
 }
 
 /* BURGER */
@@ -226,7 +254,7 @@ li a {
     text-decoration: #252a34;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .menuBurger {
         flex-direction: column;
         width: 100vw;
@@ -257,13 +285,13 @@ li a {
     width: 55%;
 }
 
-.heroBlock1 h2{
+.heroBlock1 h2 {
     margin: -25px 0px;
-font-size: 5vmin;
+    font-size: 5vmin;
 }
 
 .heroBlock1 h3 {
-    font-size: 10vmin;
+    font-size: 6vw;
     margin: 0px;
 }
 
@@ -449,7 +477,7 @@ font-size: 5vmin;
 
 .aboutBlock {
     width: 45%;
-    height: 50%;
+    height: 75%;
 }
 
 .aboutBlock h1 {
@@ -458,6 +486,7 @@ font-size: 5vmin;
 
 .aboutBlock p {
     width: 80%;
+    line-height: 32px;
 }
 
 .motCle {
@@ -471,12 +500,7 @@ font-size: 5vmin;
     width: 35%;
     overflow: hidden;
     border: solid 15px white;
-    box-shadow:
-    inset 0 7em 10em -5em rgba(255,255,255,0.7),
-    0 0.3em 0.5em -0.2em rgba(100,100,100,0.2),
-    0 1em 2em -0.75em rgba(100,100,100,0.2),
-    0 1em 3em -0.5em rgba(100,100,100,0.2),
-    0 3em 3em -0.25em rgba(100,100,100,0.2);
+    box-shadow: inset 0 7em 10em -5em rgba(255, 255, 255, 0.7), 0 0.3em 0.5em -0.2em rgba(100, 100, 100, 0.2), 0 1em 2em -0.75em rgba(100, 100, 100, 0.2), 0 1em 3em -0.5em rgba(100, 100, 100, 0.2), 0 3em 3em -0.25em rgba(100, 100, 100, 0.2);
 }
 
 .aboutPhoto img {
@@ -489,8 +513,6 @@ font-size: 5vmin;
 .imageCle {
     display: none;
 }
-
-
 
 /* WORK */
 
@@ -732,3 +754,88 @@ footer a {
     text-align: center;
     margin: 0px;
 }
+
+/* RESPONSIVITE */
+
+@media screen and (max-width: 1024px) {
+    .hero {
+        flex-direction: column;
+    }
+    .heroBlock1 {
+        margin-bottom: 50px;
+    }
+    .heroBlock1 h3 {
+        font-size: 10vw;
+    }
+    .heroBlock1 h2 {
+        font-size: 5vw;
+    }
+    .socialContainer {
+        width: 250px;
+        height: 25px;
+        flex-direction: row;
+    }
+    .traitLink0,
+    .traitLink1,
+    .traitLink2,
+    .traitLink3,
+    .traitLink4,
+    .traitLink5,
+    .traitLink6,
+    .traitLink44 {
+        display: none;
+    }
+    @media screen and (max-width: 768px) {
+        h1{
+            font-size: 10vmin;
+        }
+        .menuProjets ul li {
+            font-size: 40px;
+            line-height: 90px;
+        }
+        .heroBlock1 h3 {
+            font-size: 10vw;
+        }
+        .heroBlock1 h2 {
+            font-size: 5vw;
+        }
+        .about {
+            height: auto;
+            padding: 100px 0 100px 0;
+        }
+        .aboutBlock p {
+            width: 100%;
+        }
+        .aboutPhoto {
+            display: none;
+        }
+        .aboutBlock {
+            width: 70%;
+        }
+
+        #cv{
+            display: none;
+        }
+
+        #cvButton{
+            display: block;
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .menuProjets ul li {
+            line-height: 70px;
+        }
+        .heroBlock1 h3 {
+            font-size: 10vw;
+        }
+        .heroBlock1 h2 {
+            font-size: 24px;
+            margin-bottom: 1px;
+        }
+    }
+    @media screen and (max-width: 375px) {
+        .menuProjets ul li {
+            font-size: 30px;
+            line-height: 50px;
+        }
+    }
